@@ -4,8 +4,6 @@ import React, {  useState } from 'react';
 import './Admin.css'
 import LayOut from '../(Layout)/LayOut';
 import { useRouter } from 'next/navigation';
-import {Cookies} from 'js-cookie'
-
 const page = () => {
   const router = useRouter()
   
@@ -13,26 +11,24 @@ const [email , setEmail] = useState("")
 const [password , setPassword] = useState("")
     const Admin = async(e)=>{
         e.preventDefault()
-        Cookies.set("loggin", true)
-          router.push("/admin/detelis")
+       
         try {
-            await axios.post('http://localhost:3000/api/auth/signin',{
-                email,
-                password
-            })
-
-          
-         
-          
-           
-        } catch (error) {
-            console.log(error)
-           alert("Please fileUp Email and password")
-           router.push("/admin")
-        }
-    }
-  
-   
+          const res =  await axios.post(`http://localhost:3000/api/auth/signin`,{
+               email,
+               password
+           })
+           if (res && res.data.success){
+             router.push("/admin/create")
+           }
+           else {
+             alert("error")
+           }
+       } catch (error) {
+         console.log(error)
+       alert("Password Is Not current")
+       router.push("/")
+       }
+      }
     return (
  <LayOut>
    <form onSubmit={Admin}>
