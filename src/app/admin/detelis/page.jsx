@@ -1,8 +1,14 @@
+"use client"
 import React from 'react';
 import AdminNav from '../AdminNav';
-
+import { useRouter } from 'next/navigation';
+import {Cookies} from 'js-cookie'
 const page = () => {
-
+const router = useRouter()
+    const LogOut = () =>{
+        Cookies.remove("loggin")
+       router.push("/admin")
+    }
     return (
         <div>
             <div className="container">

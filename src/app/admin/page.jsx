@@ -4,7 +4,7 @@ import React, {  useState } from 'react';
 import './Admin.css'
 import LayOut from '../(Layout)/LayOut';
 import { useRouter } from 'next/navigation';
-
+import {Cookies} from 'js-cookie'
 
 const page = () => {
   const router = useRouter()
@@ -13,15 +13,17 @@ const [email , setEmail] = useState("")
 const [password , setPassword] = useState("")
     const Admin = async(e)=>{
         e.preventDefault()
+        Cookies.set("loggin", true)
+          router.push("/admin/detelis")
         try {
             await axios.post('http://localhost:3000/api/auth/signin',{
                 email,
                 password
             })
+
           
-           router.push("/admin/detelis")
-           alert("successfully")
-           
+         
+          
            
         } catch (error) {
             console.log(error)
