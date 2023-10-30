@@ -1,7 +1,7 @@
 "use client"
 import axios from 'axios';
 import React, {  useState } from 'react';
-import './Admin.css'
+
 import LayOut from '../(Layout)/LayOut';
 import { useRouter } from 'next/navigation';
 const page = () => {
