@@ -14,7 +14,7 @@ const page = () => {
   const Product = async (e) =>{
     e.preventDefault()
     try {
-      const res = await axios.post("http://localhost:3000/api/contact", {
+      const res = await axios.post("api/contact", {
         name ,
         msg,
         address,

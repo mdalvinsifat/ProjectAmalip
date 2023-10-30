@@ -16,7 +16,7 @@ const page = () => {
     useEffect(()=>{
     const ReadData = async()=>{
       try {
-      const data =await axios.get(`http://localhost:3000/api/user/${id}`
+      const data =await axios.get(`api/user/${id}`
       )
       
       } catch (error) {
@@ -29,7 +29,7 @@ const page = () => {
   const UpdateProduct = async(e)=>{
     e.preventDefault()
     try {
-      await axios.put(`http://localhost:3000/api/user/${id}`,{
+      await axios.put(`api/user/${id}`,{
         name,
         img,
         detelis,

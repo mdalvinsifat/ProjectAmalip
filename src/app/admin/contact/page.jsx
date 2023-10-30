@@ -8,7 +8,7 @@ const page = () => {
 
     const Product = async()=>{
         try {
-            const response = await fetch("http://localhost:3000/api/contact")
+            const response = await fetch("api/contact")
             const res = await response.json()
             setData(res.contact)
         } catch (error) {

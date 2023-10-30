@@ -27,7 +27,7 @@ useEffect(()=>{
 
 const DeleteProduct = async(id) =>{
     try {
-      const res = await axios.delete(`http://localhost:3000/api/user/${id}`)
+      const res = await axios.delete(`api/user/${id}`)
       Product()
     } catch (error) {
       console.log(error)

@@ -7,7 +7,7 @@ const page = () => {
     const [data, setData] = useState([])
   
     const Product = ()=>{
-        fetch('http://localhost:3000/api/user',{
+        fetch('api/user',{
             method:"Get"
           })
             .then((res) => res.json())

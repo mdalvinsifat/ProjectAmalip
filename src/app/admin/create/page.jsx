@@ -2,21 +2,21 @@
 import React  from 'react';
 import FileBase from 'react-filebase64';
 import AdminNav from '../AdminNav';
-
+import { useState } from 'react';
 
 const Create = () => {
  
-const [name , setName]   = React.useState("")
-const [title , setTitle]   = React.useState("")
-const [img , setImg]   = React.useState("")
-const [detelis , setDetelis]   = React.useState("")
-const [detelis1 , setDetelis1]   = React.useState("")
+const [name , setName]   = useState("")
+const [title , setTitle]   = useState("")
+const [img , setImg]   = useState("")
+const [detelis , setDetelis]   = useState("")
+const [detelis1 , setDetelis1]   = useState("")
 
 const Product = async(e)=>{
     
 e.preventDefault()
 
-let data = await fetch("http://localhost:3000/api/user",{
+let data = await fetch("api/user",{
     method:"Post",
     body:JSON.stringify({name , detelis,detelis1, img, title})
 })
