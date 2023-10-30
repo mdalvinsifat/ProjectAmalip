@@ -2,8 +2,9 @@
 
 import { useParams } from 'next/navigation';
 import React, { useEffect } from 'react'
-import LayOut from '../(Layout)/LayOut';
+
 import { useState } from 'react';
+import LayOut from '../../Layout/LayOut';
  
 const page = () => {
 

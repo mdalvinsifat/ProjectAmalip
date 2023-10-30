@@ -1,6 +1,6 @@
 "use client"
 import React  from 'react';
-import LayOut from '../(Layout)/LayOut';
+import LayOut from '../Layout/LayOut';
 import { useState, useEffect } from 'react'
 import Link from 'next/link';
 const page = () => {

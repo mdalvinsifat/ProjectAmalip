@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import './home.css'
-import LayOut from './(Layout)/LayOut'
+import LayOut from './Layout/LayOut'
 import Section from './(Home)/Section'
 import Section1 from './(Home)/Section1'
 import Section2 from './(Home)/Section2'

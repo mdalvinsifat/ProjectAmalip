@@ -2,7 +2,7 @@
 import axios from 'axios';
 import React, {  useState } from 'react';
 
-import LayOut from '../(Layout)/LayOut';
+import LayOut from '../Layout/LayOut';
 import { useRouter } from 'next/navigation';
 const page = () => {
   const router = useRouter()
