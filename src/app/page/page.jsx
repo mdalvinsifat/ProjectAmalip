@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useState } from 'react';
-import LayOut from '../(Layout)/LayOut';
+import LayOut from '../Layout/LayOut';
 import Link from 'next/link';
 
 

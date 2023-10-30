@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-import LayOut from '../(Layout)/LayOut';
+import LayOut from '../Layout/LayOut';
 import './course.css'
 import axios from 'axios';
 const page = () => {
