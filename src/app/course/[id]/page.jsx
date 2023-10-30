@@ -1,7 +1,8 @@
 "use client"
-import LayOut from '@/app/(Layout)/LayOut';
+
 import { useParams } from 'next/navigation';
 import React, { useEffect } from 'react'
+import LayOut from '../(Layout)/LayOut';
 import { useState } from 'react';
  
 const page = () => {
