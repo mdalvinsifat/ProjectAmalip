@@ -11,7 +11,7 @@ const [ data , setData] = useState([])
 
 const Product = async() =>{
 
-    fetch("http://localhost:3000/api/user",{
+    fetch("/api/user",{
         method:"GET"
     })
 .then( res => res.json())
