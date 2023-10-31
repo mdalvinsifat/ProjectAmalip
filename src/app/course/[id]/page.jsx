@@ -15,7 +15,7 @@ const Page = () => {
 DetelisProduct()
     },[])
     const DetelisProduct = async()=>{
-        const respose = await fetch(`api/user/${id}`)
+        const respose = await fetch(`/api/user/${id}`)
         const res = await respose.json()
         setdata(res.product)
     }
