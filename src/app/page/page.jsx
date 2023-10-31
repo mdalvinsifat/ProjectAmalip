@@ -10,7 +10,7 @@ const Page = () => {
   
 const Product = async()=>{
  try {
-  const response = await fetch("api/user")
+  const response = await fetch("/api/user")
   const res = await response.json()
   setData(res.product)
  } catch (error) {
