@@ -27,7 +27,7 @@ useEffect( () => {
                    <div className="row">
           {
             data.map((item) =>(
-                <div className="col-md-4 mt-5">
+                <div key={item.id} className="col-md-4 mt-5">
                 <div className="card" style={{width: '18rem'}}>
   <img src={item.img} className="card-img-top" alt="..." />
   <div className="card-body">
