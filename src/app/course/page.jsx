@@ -3,7 +3,7 @@ import React  from 'react';
 import LayOut from '../Layout/LayOut';
 import { useState, useEffect } from 'react'
 import Link from 'next/link';
-const page = () => {
+const Page = () => {
     const [data, setData] = useState([])
   
     const Product = ()=>{
@@ -60,4 +60,4 @@ const page = () => {
  
 };
 
-export default page;
+export default Page;

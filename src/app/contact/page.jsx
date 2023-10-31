@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import LayOut from '../Layout/LayOut';
 import './course.css'
 import axios from 'axios';
-const page = () => {
+const Page = () => {
 
   const [name, setName] = useState("")
   const [msg, setMsg] = useState("")
@@ -67,4 +67,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;

@@ -5,7 +5,7 @@ import axios from 'axios';
 import AdminNav from '../../AdminNav';
 import FileBase from 'react-filebase64'
 
-const page = () => {
+const Page = () => {
     const {id} = useParams()
     const [name , setName]   = useState("")
     const [title , setTitle]   = useState("")
@@ -100,4 +100,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;

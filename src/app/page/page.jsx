@@ -4,7 +4,7 @@ import LayOut from '../Layout/LayOut';
 import Link from 'next/link';
 
 
-const page = () => {
+const Page = () => {
 
     const [data, setData] = useState([])
   
@@ -47,4 +47,4 @@ useEffect( () => {
     );
 };
 
-export default page;
+export default Page;

@@ -4,7 +4,7 @@ import React, {  useState } from 'react';
 
 import LayOut from '../Layout/LayOut';
 import { useRouter } from 'next/navigation';
-const page = () => {
+const Page = () => {
   const router = useRouter()
   
 const [email , setEmail] = useState("")
@@ -60,4 +60,4 @@ const [password , setPassword] = useState("")
     );
 };
 
-export default page;
+export default Page;

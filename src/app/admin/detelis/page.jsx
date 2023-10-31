@@ -2,7 +2,7 @@
 import React from 'react';
 import AdminNav from '../AdminNav';
 
-const page = () => {
+const Page = () => {
 
     return (
         <div>
@@ -21,4 +21,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;

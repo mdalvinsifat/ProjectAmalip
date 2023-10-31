@@ -6,7 +6,7 @@ import React, { useEffect } from 'react'
 import { useState } from 'react';
 import LayOut from '../../Layout/LayOut';
  
-const page = () => {
+const Page = () => {
 
     const {id} = useParams()
     const [data , setdata]   = useState("")
@@ -41,4 +41,4 @@ DetelisProduct()
     );
 };
 
-export default page;
+export default Page;

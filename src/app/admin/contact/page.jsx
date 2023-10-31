@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import AdminNav from '../AdminNav';
 
-const page = () => {
+const Page = () => {
 
     const [ data , setData] = useState([])
 
@@ -68,4 +68,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;

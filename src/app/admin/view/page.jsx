@@ -5,7 +5,7 @@ import AdminNav from '../AdminNav';
 import Link from 'next/link';
 import axios from 'axios';
 import Image from 'next/image';
-const page = () => {
+const Page = () => {
 
 const [ data , setData] = useState([])
 
@@ -87,4 +87,4 @@ return (
     );
 };
 
-export default page;
+export default Page;
