@@ -14,7 +14,7 @@ const Page = () => {
   const Product = async (e) =>{
     e.preventDefault()
     try {
-      const res = await axios.post("api/contact", {
+      const res = await axios.post("/api/contact", {
         name ,
         msg,
         address,
