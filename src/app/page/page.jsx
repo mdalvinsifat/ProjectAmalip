@@ -13,7 +13,7 @@ const Product = async()=>{
   const response = await fetch("api/user")
   const res = await response.json()
   setData(res.product)
-     console.log(res.product)
+
  } catch (error) {
   console.log(error)
  }
