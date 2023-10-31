@@ -7,7 +7,7 @@ const Page = () => {
     const [data, setData] = useState([])
   
     const Product = ()=>{
-        fetch('api/user',{
+        fetch('/api/user',{
             method:"Get"
           })
             .then((res) => res.json())
@@ -28,7 +28,7 @@ const Page = () => {
           <div className="container m-5">
           {
             data.map((item) =>(
-                <div>
+                <div key={item.id}>
                    <div className="row m-5">
                     <div className="col-md-4">
                       <img src={item.img} alt="" srcset="" className='w-75' />
