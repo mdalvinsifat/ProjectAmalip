@@ -16,7 +16,7 @@ const Product = async(e)=>{
     
 e.preventDefault()
 
-let data = await fetch("https://project-amalip-git-main-alvin-sifats-projects.vercel.app/api/user",{
+let data = await fetch("api/user",{
     method:"Post",
     body:JSON.stringify({name , detelis,detelis1, img, title})
 })
