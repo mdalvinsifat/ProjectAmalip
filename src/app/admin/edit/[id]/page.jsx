@@ -29,7 +29,7 @@ const Page = () => {
   const UpdateProduct = async(e)=>{
     e.preventDefault()
     try {
-      await axios.put(`/api/user/${id}`,{
+      await axios.put(`https://project-amalip-git-main-alvin-sifats-projects.vercel.app/api/user/${id}`,{
         name,
         img,
         detelis,
