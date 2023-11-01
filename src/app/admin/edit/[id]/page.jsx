@@ -16,7 +16,7 @@ const Page = () => {
     useEffect(()=>{
     const ReadData = async()=>{
       try {
-      const data =await axios.get(`/api/user/${id}`
+      const data =await axios.get(`https://project-amalip-git-main-alvin-sifats-projects.vercel.app/api/user/${id}`
       )
       
       } catch (error) {
