@@ -16,7 +16,7 @@ const Page = () => {
     useEffect(()=>{
     const ReadData = async()=>{
       try {
-      const data =await axios.get(`https://project-amalip-git-main-alvin-sifats-projects.vercel.app/api/user/${id}`
+      const data =await axios.get(`api/user/${id}`
       )
       
       } catch (error) {
@@ -29,7 +29,7 @@ const Page = () => {
   const UpdateProduct = async(e)=>{
     e.preventDefault()
     try {
-      await axios.put(`https://project-amalip-git-main-alvin-sifats-projects.vercel.app/api/user/${id}`,{
+      await axios.put(`api/user/${id}`,{
         name,
         img,
         detelis,
